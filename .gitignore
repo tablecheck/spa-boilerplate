@@ -12,9 +12,9 @@ lib
 config/local.*
 config/local-*
 tsconfig.json
-tsconfig.eslint.json
-tsconfig.esm.json
-tsconfig.cjs.json
+tsconfig.*.json
+storybook-static
+junit
 *.tsbuildinfo
 .env.local
 .env.development.local

@@ -24,7 +24,7 @@ DEMO: [tc-spa-boilerplate.netlify.app](https://tc-spa-boilerplate.netlify.app)
 
 To upgrade this boilerplate and use the latest configuration and dependencies, please run this command and select SPA when asked:
 
-`npx --legacy-peer-deps -p @tc-react-system/scripts@9.0.0-init-script-test2.0 react-scripts init`
+`npx --legacy-peer-deps -p @tc-react-system/scripts@latest react-scripts init`
 
 ## Support
 

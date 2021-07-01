@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "pre-commit": "react-scripts precommit --no-config",
+    "pre-commit": "react-scripts precommit",
     "commit-msg": "commitlint -e $GIT_PARAMS"
   }
 }
