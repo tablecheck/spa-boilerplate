@@ -1,6 +1,6 @@
 # TableCheck's SPA Boilerplate
 
-DEMO: [spa-boilerplate.netlify.app](https://spa-boilerplate.netlify.app)
+DEMO: [tc-spa-boilerplate.netlify.app](https://tc-spa-boilerplate.netlify.app)
 
 ## Features
 
