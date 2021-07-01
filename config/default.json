@@ -1,0 +1,7 @@
+{
+  "isDevelopment": false,
+  "logLevel": "error",
+  "publicUri": "/* @echo PUBLIC_URL */",
+  "baseName": "",
+  "cdnURL": "https://cdn0.tablecheck.com/common"
+}

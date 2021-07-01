@@ -1,0 +1,3 @@
+{
+  "presets": ["@tc-react-system/babel-preset"]
+}
