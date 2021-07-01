@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { AnchorButton, Button } from '@tablekit/button';
+import { Button } from '@tablekit/button';
 import { LanguageSelector as TKLanguageSelector } from '@tablekit/language-selector';
 import { Spacing } from '@tablekit/theme';
 import { Link } from 'react-router-dom';

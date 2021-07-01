@@ -1,10 +1,7 @@
-import {
-  faBug,
-  faQuestionCircle,
-  faTimes,
-  faGlobe,
-  faExternalLinkAlt
-} from '@fortawesome/pro-light-svg-icons';
+import { faBug } from '@fortawesome/pro-light-svg-icons/faBug';
+import { faGlobe } from '@fortawesome/pro-light-svg-icons/faGlobe';
+import { faQuestionCircle } from '@fortawesome/pro-light-svg-icons/faQuestionCircle';
+import { faTimes } from '@fortawesome/pro-light-svg-icons/faTimes';
 import { ordered } from '@tablecheck/locales';
 import { ButtonAppearance } from '@tablekit/button';
 import { Icon } from '@tablekit/icon';
@@ -21,7 +18,6 @@ import {
   SidenavWrapper,
   CloseButton,
   SidenavItems,
-  BookTableButton,
   MobileOnlyItems
 } from './styles';
 
@@ -98,6 +94,7 @@ export const Sidenav = ({
             locales={ordered}
             shouldShowCloseIcon
             view={View.Mobile}
+            itemWidth="100%"
             onChangeLanguage={changeLanguage}
             renderTrigger={({ onClick, ref }) => (
               <Item
@@ -111,13 +108,6 @@ export const Sidenav = ({
           />
         </MobileOnlyItems>
       </SidenavItems>
-      <BookTableButton
-        href={`https://tablecheck.com/${language}`}
-        target="_blank"
-        iconAfter={<Icon icon={faExternalLinkAlt} />}
-      >
-        {t('actions:book_table')}
-      </BookTableButton>
     </SidenavWrapper>
   );
 };

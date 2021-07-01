@@ -1,8 +1,6 @@
-import {
-  faCheckCircle,
-  faExchange,
-  faTimesCircle
-} from '@fortawesome/pro-light-svg-icons';
+import { faCheckCircle } from '@fortawesome/pro-light-svg-icons/faCheckCircle';
+import { faExchange } from '@fortawesome/pro-light-svg-icons/faExchange';
+import { faTimesCircle } from '@fortawesome/pro-light-svg-icons/faTimesCircle';
 import { useTranslation } from 'react-i18next';
 
 import { Status, StatusIcon } from './styles';

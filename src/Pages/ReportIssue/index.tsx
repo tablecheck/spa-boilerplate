@@ -12,7 +12,7 @@ import { MessageTextarea, FormFooter } from './styles';
 
 export const ReportIssue = (): JSX.Element => {
   const [t, { language }] = useTranslation();
-  const [state, handleSubmit] = useForm('meqvenjo');
+  const [state, handleSubmit] = useForm(CONFIG.formSpreeId);
   const [message, setMessage] = useState('');
 
   return (

@@ -1,4 +1,4 @@
-import { faBars } from '@fortawesome/pro-light-svg-icons';
+import { faBars } from '@fortawesome/pro-light-svg-icons/faBars';
 import { faGlobe } from '@fortawesome/pro-light-svg-icons/faGlobe';
 import { ordered } from '@tablecheck/locales';
 import { Button, ButtonAppearance } from '@tablekit/button';
