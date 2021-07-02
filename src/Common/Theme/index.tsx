@@ -5,11 +5,6 @@ import {
   buttonDarkTheme,
   buttonThemeNamespace
 } from '@tablekit/button';
-import {
-  selectClassicTheme,
-  selectDarkTheme,
-  selectThemeNamespace
-} from '@tablekit/select';
 import { ThemeProvider } from '@tablekit/theme';
 import { ReactNode, useEffect, useMemo } from 'react';
 import { Helmet } from 'react-helmet';
@@ -63,13 +58,11 @@ export const AppThemeProvider = ({
     const updatedTheme = isDarkMode
       ? {
           ...selectedTheme.dark,
-          [buttonThemeNamespace]: buttonDarkTheme,
-          [selectThemeNamespace]: selectDarkTheme
+          [buttonThemeNamespace]: buttonDarkTheme
         }
       : {
           ...selectedTheme.classic,
-          [buttonThemeNamespace]: buttonClassicTheme,
-          [selectThemeNamespace]: selectClassicTheme
+          [buttonThemeNamespace]: buttonClassicTheme
         };
 
     return {
