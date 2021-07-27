@@ -7,7 +7,7 @@
   "scripts": {
     "audit": "tablecheck-scripts auditjs",
     "audit:ci": "tablecheck-scripts auditjs --ci",
-    "build": "razzle build - --noninteractive",
+    "build": "tablecheck-scripts-postinstall && razzle build - --noninteractive",
     "coverage-summary": "tablecheck-scripts coverage-summary",
     "format": "tablecheck-scripts lint --fix",
     "postinstall": "tablecheck-scripts-postinstall",
