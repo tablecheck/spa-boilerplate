@@ -10,6 +10,7 @@
     "build": "razzle build - --noninteractive",
     "coverage-summary": "tablecheck-scripts coverage-summary",
     "format": "tablecheck-scripts lint --fix",
+    "postinstall": "tablecheck-scripts-postinstall",
     "start": "concurrently --kill-others \"npm run start:tsc\" \"npm run start:razzle\"",
     "start:razzle": "razzle start",
     "start:tsc": "tablecheck-scripts tsc -w --incremental --preserveWatchOutput",
