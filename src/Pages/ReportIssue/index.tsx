@@ -1,6 +1,6 @@
 import { useForm } from '@formspree/react';
-import { Button } from '@tablekit/button';
-import { Input } from '@tablekit/input';
+import { Button } from '@tablecheck/tablekit-button';
+import { Input } from '@tablecheck/tablekit-input';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';

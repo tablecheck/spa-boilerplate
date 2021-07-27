@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { Button } from '@tablekit/button';
-import { LanguageSelector as TKLanguageSelector } from '@tablekit/language-selector';
-import { Spacing } from '@tablekit/theme';
+import { Button } from '@tablecheck/tablekit-button';
+import { LanguageSelector as TKLanguageSelector } from '@tablecheck/tablekit-language-selector';
+import { Spacing } from '@tablecheck/tablekit-theme';
 import { Link } from 'react-router-dom';
 
 import { BREAKPOINTS, GRID_MARGIN, TOPNAV_HEIGHT } from 'Layouts';

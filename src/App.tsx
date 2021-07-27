@@ -1,4 +1,5 @@
 import { IdProvider } from '@radix-ui/react-id';
+import '@tablecheck/tablekit-free-icon-config';
 import { useState } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import { BrowserRouter } from 'react-router-dom';

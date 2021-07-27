@@ -4,8 +4,8 @@ import {
   buttonClassicTheme,
   buttonDarkTheme,
   buttonThemeNamespace
-} from '@tablekit/button';
-import { ThemeProvider } from '@tablekit/theme';
+} from '@tablecheck/tablekit-button';
+import { ThemeProvider } from '@tablecheck/tablekit-theme';
 import { ReactNode, useEffect, useMemo } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';

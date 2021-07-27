@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { Textarea } from '@tablekit/textarea';
-import { Spacing } from '@tablekit/theme';
+import { Textarea } from '@tablecheck/tablekit-textarea';
+import { Spacing } from '@tablecheck/tablekit-theme';
 
 export const MessageTextarea = styled(Textarea)`
   margin-bottom: ${Spacing.L5};

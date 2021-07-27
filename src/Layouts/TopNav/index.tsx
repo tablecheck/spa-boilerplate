@@ -1,10 +1,10 @@
-import { faBars } from '@fortawesome/pro-light-svg-icons/faBars';
-import { faGlobe } from '@fortawesome/pro-light-svg-icons/faGlobe';
+import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons/faGlobe';
 import { ordered } from '@tablecheck/locales';
-import { Button, ButtonAppearance } from '@tablekit/button';
-import { Icon } from '@tablekit/icon';
-import { View } from '@tablekit/language-selector';
-import { LogoSymbol } from '@tablekit/logo';
+import { Button, ButtonAppearance } from '@tablecheck/tablekit-button';
+import { Icon } from '@tablecheck/tablekit-icon';
+import { View } from '@tablecheck/tablekit-language-selector';
+import { LogoSymbol } from '@tablecheck/tablekit-logo';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useHistory, useLocation } from 'react-router-dom';

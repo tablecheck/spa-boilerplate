@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@tc-react-system/eslint-config']
+  extends: ['@tablecheck/eslint-config']
 };

@@ -1,4 +1,4 @@
-import { Link as TKLink } from '@tablekit/typography';
+import { Link as TKLink } from '@tablecheck/tablekit-typography';
 import { Helmet } from 'react-helmet';
 import { useTranslation, Trans } from 'react-i18next';
 

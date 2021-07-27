@@ -1,4 +1,4 @@
-import { Link } from '@tablekit/typography';
+import { Link } from '@tablecheck/tablekit-typography';
 import { useTranslation } from 'react-i18next';
 
 import { AppRoute } from 'enums';

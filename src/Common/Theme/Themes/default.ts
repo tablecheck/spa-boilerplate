@@ -1,4 +1,4 @@
-import { CLASSIC_COLORS, DARK_COLORS } from '@tablekit/theme';
+import { CLASSIC_COLORS, DARK_COLORS } from '@tablecheck/tablekit-theme';
 
 import { AppTheme } from '../types';
 

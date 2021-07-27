@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
-import { Spacing } from '@tablekit/theme';
-import { getLinkStyles, TypographyHeadlineDesktop } from '@tablekit/typography';
+import { Spacing } from '@tablecheck/tablekit-theme';
+import {
+  getLinkStyles,
+  TypographyHeadlineDesktop
+} from '@tablecheck/tablekit-typography';
 import { Link } from 'react-router-dom';
 
 import { fadeIn, pageTransitionEasing } from 'styles';

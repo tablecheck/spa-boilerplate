@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
-import { Button } from '@tablekit/button';
-import { ItemGroup } from '@tablekit/item';
-import { Panel } from '@tablekit/panel';
-import { Spacing } from '@tablekit/theme';
+import { Button } from '@tablecheck/tablekit-button';
+import { ItemGroup } from '@tablecheck/tablekit-item';
+import { Panel } from '@tablecheck/tablekit-panel';
+import { Spacing } from '@tablecheck/tablekit-theme';
 
 import { BREAKPOINTS, GRID_MARGIN } from 'Layouts';
 

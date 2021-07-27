@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { Spacing } from '@tablekit/theme';
-import { getLinkStyles } from '@tablekit/typography';
+import { Spacing } from '@tablecheck/tablekit-theme';
+import { getLinkStyles } from '@tablecheck/tablekit-typography';
 import { Link } from 'react-router-dom';
 
 import { BREAKPOINTS, GRID_MARGIN, TOPNAV_HEIGHT } from 'Layouts';

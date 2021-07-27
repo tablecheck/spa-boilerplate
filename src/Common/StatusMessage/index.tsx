@@ -1,6 +1,6 @@
-import { faCheckCircle } from '@fortawesome/pro-light-svg-icons/faCheckCircle';
-import { faExchange } from '@fortawesome/pro-light-svg-icons/faExchange';
-import { faTimesCircle } from '@fortawesome/pro-light-svg-icons/faTimesCircle';
+import { faCheckCircle } from '@fortawesome/free-regular-svg-icons/faCheckCircle';
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons/faPaperPlane';
+import { faTimesCircle } from '@fortawesome/free-regular-svg-icons/faTimesCircle';
 import { useTranslation } from 'react-i18next';
 
 import { Status, StatusIcon } from './styles';
@@ -27,7 +27,7 @@ export const StatusMessage = ({
     <Status>
       {state.submitting ? (
         <>
-          <StatusIcon icon={faExchange} />
+          <StatusIcon icon={faPaperPlane} />
           <span>{t('actions:sending')}</span>
         </>
       ) : (

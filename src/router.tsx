@@ -1,7 +1,7 @@
 import { css, Global, useTheme } from '@emotion/react';
 import { ordered as orderedLocales } from '@tablecheck/locales';
-import { Spacing } from '@tablekit/theme';
-import { commonTypographyStyles } from '@tablekit/typography';
+import { Spacing } from '@tablecheck/tablekit-theme';
+import { commonTypographyStyles } from '@tablecheck/tablekit-typography';
 import { useTranslation } from 'react-i18next';
 import { Route, Switch, Redirect } from 'react-router-dom';
 

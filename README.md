@@ -34,7 +34,7 @@ The easiest way is by using [TableCheck's Netlify account](https://app.netlify.c
 
 To upgrade this boilerplate and use the latest configuration and dependencies, please run this command and select SPA when asked:
 
-`npx --legacy-peer-deps -p @tc-react-system/scripts@latest react-scripts init`
+`npx --legacy-peer-deps -p @tablecheck/scripts tablecheck-scripts init`
 
 ## Support
 

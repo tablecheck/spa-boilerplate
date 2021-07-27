@@ -1,1 +1,1 @@
-module.exports = { extends: ['@tc-react-system/commitlint-config'] };
+module.exports = { extends: ['@tablecheck/commitlint-config'] };

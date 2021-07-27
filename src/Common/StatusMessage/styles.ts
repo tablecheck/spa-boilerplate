@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { Icon } from '@tablekit/icon';
-import { Spacing } from '@tablekit/theme';
+import { Icon } from '@tablecheck/tablekit-icon';
+import { Spacing } from '@tablecheck/tablekit-theme';
 
 export const Status = styled.div`
   color: ${({ theme }) => theme.colors.textSubtle};
