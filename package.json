@@ -8,7 +8,6 @@
     "audit": "tablecheck-scripts auditjs",
     "audit:ci": "tablecheck-scripts auditjs --ci",
     "build": "razzle build",
-    "co:login": "aws codeartifact login --tool npm --repository tablecheck --domain tablecheck",
     "coverage-summary": "tablecheck-scripts coverage-summary",
     "format": "tablecheck-scripts lint --fix",
     "start": "concurrently --kill-others \"npm run start:tsc\" \"npm run start:razzle\"",
