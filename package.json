@@ -7,7 +7,7 @@
   "scripts": {
     "audit": "tablecheck-scripts auditjs",
     "audit:ci": "tablecheck-scripts auditjs --ci",
-    "build": "razzle build",
+    "build": "razzle build - --noninteractive",
     "coverage-summary": "tablecheck-scripts coverage-summary",
     "format": "tablecheck-scripts lint --fix",
     "start": "concurrently --kill-others \"npm run start:tsc\" \"npm run start:razzle\"",
