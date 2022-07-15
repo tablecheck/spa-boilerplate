@@ -69,7 +69,7 @@ export const Sidenav = ({
           elemBefore={<Icon icon={faQuestionCircle} />}
           onClick={() => setOpen(false)}
         >
-          {t('attributes:links:about')}
+          {t('attributes.links.about')}
         </Item>
         <Item
           as={Link}
@@ -77,7 +77,7 @@ export const Sidenav = ({
           elemBefore={<Icon icon={faBug} />}
           onClick={() => setOpen(false)}
         >
-          {t('attributes:links:report_issue')}
+          {t('attributes.links.report_issue')}
         </Item>
         <MobileOnlyItems>
           <Item
@@ -87,7 +87,7 @@ export const Sidenav = ({
               setOpen(false);
             }}
           >
-            {t('actions:toggle_theme')}
+            {t('actions.toggle_theme')}
           </Item>
           <LanguageSelector
             currentLanguage={language}

@@ -28,14 +28,14 @@ export const StatusMessage = ({
       {state.submitting ? (
         <>
           <StatusIcon icon={faPaperPlane} />
-          <span>{t('actions:sending')}</span>
+          <span>{t('actions.sending')}</span>
         </>
       ) : (
         <>
           {state.succeeded && (
             <>
               <StatusIcon icon={faCheckCircle} />
-              <span>{t('keywords:thank_you')}</span>
+              <span>{t('keywords.thank_you')}</span>
             </>
           )}
           {state.errors && state.errors.length > 0 && (

@@ -17,30 +17,30 @@ export const ReportIssue = (): JSX.Element => {
 
   return (
     <PageWrapper>
-      <Headline>{t('attributes:links:report_issue')}</Headline>
+      <Headline>{t('attributes.links.report_issue')}</Headline>
       <PageContent>
         <form onSubmit={handleSubmit}>
-          <p>{t('attributes:pages:report_issue')}</p>
+          <p>{t('attributes.pages.report_issue')}</p>
           <Input
-            label={t('keywords:your_name')}
+            label={t('keywords.your_name')}
             name="name"
             shouldFitContainer
-            placeholder={t('keywords:anonymous')}
+            placeholder={t('keywords.anonymous')}
           />
           <Input
-            label={t('keywords:your_email')}
+            label={t('keywords.your_email')}
             name="email"
             shouldFitContainer
-            placeholder={t('keywords:anonymous')}
+            placeholder={t('keywords.anonymous')}
           />
           <MessageTextarea
-            label={t('keywords:message')}
+            label={t('keywords.message')}
             minimumRows={6}
             isMessageHidden
             shouldFitContainer
             enableResize
             isRequired
-            name={t('keywords:message')}
+            name={t('keywords.message')}
             value={message}
             autoFocus
             onChange={(event) => setMessage(event.target.value)}
@@ -51,7 +51,7 @@ export const ReportIssue = (): JSX.Element => {
               isDisabled={state.submitting || !message}
               isLoading={state.submitting}
             >
-              {t('actions:submit')}
+              {t('actions.submit')}
             </Button>
             <StatusMessage state={state} />
           </FormFooter>
@@ -62,8 +62,8 @@ export const ReportIssue = (): JSX.Element => {
         />
       </PageContent>
       <Helmet>
-        <title lang={language}>{`${t('attributes:links:report_issue')} - ${t(
-          'keywords:app_name'
+        <title lang={language}>{`${t('attributes.links.report_issue')} - ${t(
+          'keywords.app_name'
         )}`}</title>
       </Helmet>
     </PageWrapper>
