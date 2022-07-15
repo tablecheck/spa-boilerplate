@@ -31,11 +31,11 @@ i18next
         });
     }
   });
-  
+
 export async function initI18n(): Promise<typeof i18next> {
   if (!i18next.isInitialized) {
     await i18next.init({
-      resources: { en: { translations: en} },
+      resources: { en: { translations: en } },
       partialBundledLanguages: true,
       fallbackLng: DEFAULT_LOCALE,
       supportedLngs: [...SUPPORTED_LOCALES],
