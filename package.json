@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "spa-boilerplate",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "TableCheck Inc.",
   "version": "0.1.0",
   "scripts": {
