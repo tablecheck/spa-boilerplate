@@ -4,7 +4,7 @@ DEMO: [tc-spa-boilerplate.netlify.app](https://tc-spa-boilerplate.netlify.app)
 
 ## Features
 
-- Main tech stack: React, Emotion, i18n
+- Main tech stack: React, TypeScript, Emotion, i18n
 - Tablekit integration with FontAwesome icons and Dark Mode
 - Basic localized routing
 - Basic layout with footer, top and side navs
@@ -22,7 +22,8 @@ DEMO: [tc-spa-boilerplate.netlify.app](https://tc-spa-boilerplate.netlify.app)
 
 ## Deploy to production
 
-The boilerplate is configured to be deployed to [Netlify](https://netlify.com), but it can also work with Github pages, Vercel, AWS Amplify, etc.
+The boilerplate is configured to be deployed to [Netlify](https://netlify.com), but it can also work with Github pages,
+Vercel, AWS Amplify, etc.
 
 - Click on `New site from Git`
 - Select `Github` and the repository where you forked it
@@ -32,7 +33,8 @@ The boilerplate is configured to be deployed to [Netlify](https://netlify.com), 
 
 ## Upgrade
 
-To upgrade this boilerplate and use the latest configuration and dependencies, please run this command and select SPA when asked:
+To upgrade this boilerplate and use the latest configuration and dependencies, please run this command and select SPA
+when asked:
 
 `npx --legacy-peer-deps -p @tablecheck/scripts tablecheck-scripts init`
 

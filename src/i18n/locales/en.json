@@ -8,15 +8,15 @@
     "links": {
       "powered_by": "Powered by TableCheck",
       "report_issue": "Report an issue",
-      "about": "About us"
+      "about": "About"
     },
     "titles": {
       "headline": "Hello World!"
     },
     "pages": {
-      "about_us": "At <0>tablecheck</0> we love connecting diners with restaurants. That's why we created the SPA Boilerplate.",
+      "about_us": "At <0>tablecheck</0> we love connecting diners with restaurants. The purpose of this app is to...",
       "about_us_salute": "Hey there!",
-      "report_issue": "If you see any wrong content or something that could be improved in the site, please report it using the form below. Thank you very much!"
+      "report_issue": "If you see any wrong content or something that could be improved in the あっp, please report it using the form below. Thank you very much!"
     }
   },
   "keywords": {

@@ -1,3 +1,4 @@
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Spacing } from '@tablecheck/tablekit-theme';
 import { getLinkStyles } from '@tablecheck/tablekit-typography';
@@ -23,14 +24,18 @@ export const FooterWrapper = styled.div`
   }
 `;
 
-export const FooterLink = styled(Link)`
-  ${getLinkStyles};
-
+const commonLinkStyles = css`
   &:not(:last-child) {
     margin-right: ${Spacing.L6};
   }
 `;
 
-export const Copyright = styled.span`
-  margin-left: ${Spacing.L2};
+export const FooterLink = styled(Link)`
+  ${getLinkStyles};
+  ${commonLinkStyles};
+`;
+
+export const FooterHrefLink = styled.a`
+  ${getLinkStyles};
+  ${commonLinkStyles};
 `;

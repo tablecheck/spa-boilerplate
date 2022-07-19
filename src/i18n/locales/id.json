@@ -8,13 +8,13 @@
     "links": {
       "powered_by": "Didukung oleh TableCheck",
       "report_issue": "Laporkan masalah",
-      "about": "Tentang kami"
+      "about": "Tentang"
     },
     "titles": {
       "headline": "Halo Dunia!"
     },
     "pages": {
-      "about_us": "Di <0>tablecheck</0> kami senang menghubungkan pengunjung dengan restoran. Itu sebabnya kami membuat SPA Boilerplate.",
+      "about_us": "Di <0>tablecheck</0> kami senang menghubungkan pengunjung dengan restoran. Tujuan dari aplikasi ini adalah untuk...",
       "about_us_salute": "Hei yang disana!",
       "report_issue": "Jika Anda melihat konten yang salah atau sesuatu yang dapat diperbaiki di situs, harap laporkan menggunakan formulir di bawah ini. Terima kasih banyak!"
     }

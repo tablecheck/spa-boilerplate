@@ -1,3 +1,4 @@
+import { FormError } from '@formspree/core/forms';
 import { faCheckCircle } from '@fortawesome/free-regular-svg-icons/faCheckCircle';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons/faPaperPlane';
 import { faTimesCircle } from '@fortawesome/free-regular-svg-icons/faTimesCircle';
@@ -5,23 +6,13 @@ import { useTranslation } from 'react-i18next';
 
 import { Status, StatusIcon } from './styles';
 
-interface ErrorPayload {
-  field?: string;
-  code: string | null;
-  message: string;
-}
-
 interface StatusState {
   submitting: boolean;
   succeeded: boolean;
-  errors: ErrorPayload[];
+  errors: FormError[];
 }
 
-export const StatusMessage = ({
-  state
-}: {
-  state: StatusState;
-}): JSX.Element => {
+export function StatusMessage({ state }: { state: StatusState }): JSX.Element {
   const [t] = useTranslation();
   return (
     <Status>
@@ -48,4 +39,4 @@ export const StatusMessage = ({
       )}
     </Status>
   );
-};
+}

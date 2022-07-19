@@ -1,7 +1,4 @@
-import { css, Global, useTheme } from '@emotion/react';
 import { ordered as orderedLocales } from '@tablecheck/locales';
-import { Spacing } from '@tablecheck/tablekit-theme';
-import { commonTypographyStyles } from '@tablecheck/tablekit-typography';
 import { useTranslation } from 'react-i18next';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
@@ -10,43 +7,38 @@ import { Home } from 'Pages/Home';
 import { ReportIssue } from 'Pages/ReportIssue';
 import { AppRoute } from 'enums';
 
+import { PageLayout } from './Layouts/Page';
+
 export const SUPPORTED_LOCALES = orderedLocales.map(({ code }) => code);
 
-export const Router = (): JSX.Element => {
-  const theme = useTheme();
+export function Router({
+  isDarkMode,
+  setDarkMode
+}: {
+  isDarkMode: boolean;
+  setDarkMode: (value: boolean) => void;
+}): JSX.Element {
   const [, { language }] = useTranslation();
   const localePath = `:locale(${SUPPORTED_LOCALES.join('|')})`;
 
   return (
-    <>
-      <Global
-        styles={css`
-          html,
-          body,
-          #root {
-            height: 100%;
-          }
-          body {
-            background-color: ${theme.colors.canvas};
-          }
-          p {
-            margin: ${Spacing.L4} 0;
-          }
-          ${commonTypographyStyles};
-        `}
-      />
-      <Switch>
-        <Route path={`/${localePath}/${AppRoute.About}`}>
+    <Switch>
+      <Route path={`/${localePath}/${AppRoute.About}`}>
+        <PageLayout isDarkMode={isDarkMode} setDarkMode={setDarkMode}>
           <About />
-        </Route>
-        <Route path={`/${localePath}/${AppRoute.ReportIssue}`}>
+        </PageLayout>
+      </Route>
+      <Route path={`/${localePath}/${AppRoute.ReportIssue}`}>
+        <PageLayout isDarkMode={isDarkMode} setDarkMode={setDarkMode}>
           <ReportIssue />
-        </Route>
-        <Route path={`/${localePath}`}>
+        </PageLayout>
+      </Route>
+      <Route path={`/${localePath}`}>
+        <PageLayout isDarkMode={isDarkMode} setDarkMode={setDarkMode}>
           <Home />
-        </Route>
-        <Redirect to={`/${language}`} />
-      </Switch>
-    </>
+        </PageLayout>
+      </Route>
+      <Redirect to={`/${language}`} />
+    </Switch>
   );
-};
+}
