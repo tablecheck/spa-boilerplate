@@ -9,12 +9,12 @@ export const About = (): JSX.Element => {
 
   return (
     <PageWrapper>
-      <Headline>{t('attributes:links:about')}</Headline>
+      <Headline>{t('attributes.links.about')}</Headline>
       <PageContent>
         <div>
-          <h2>{t('attributes:pages:about_us_salute')} </h2>
+          <h2>{t('attributes.pages.about_us_salute')} </h2>
           <p>
-            <Trans i18nKey="attributes:pages:about_us">
+            <Trans i18nKey="attributes.pages.about_us">
               <TKLink
                 href={`https://tablecheck.com/${language}`}
                 target="_blank"
@@ -30,8 +30,8 @@ export const About = (): JSX.Element => {
         />
       </PageContent>
       <Helmet>
-        <title lang={language}>{`${t('attributes:links:about')} - ${t(
-          'keywords:app_name'
+        <title lang={language}>{`${t('attributes.links.about')} - ${t(
+          'keywords.app_name'
         )}`}</title>
       </Helmet>
     </PageWrapper>

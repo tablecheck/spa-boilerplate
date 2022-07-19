@@ -10,7 +10,8 @@ import { useTranslation } from 'react-i18next';
 import { useHistory, useLocation } from 'react-router-dom';
 import { tciSun } from 'tablecheck-icons/tciSun';
 
-import { i18n } from '../../i18n';
+import { getI18nextInstance } from 'i18n';
+
 import { Sidenav } from '../Sidenav';
 
 import {
@@ -32,6 +33,7 @@ export const TopNav = ({
   setDarkMode: (value: boolean) => void;
 }): JSX.Element | null => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const i18next = getI18nextInstance();
   const history = useHistory();
   const [t, { language }] = useTranslation();
   const location = useLocation();
@@ -50,7 +52,7 @@ export const TopNav = ({
     }
 
     history.replace(page);
-    i18n.changeLanguage(locale);
+    i18next.changeLanguage(locale);
   };
 
   return (
@@ -58,7 +60,7 @@ export const TopNav = ({
       <TopNavContent>
         <LogoWrapper to={`/${language}`}>
           <LogoSymbol size="24px" />
-          <LogoWording>{t('keywords:app_name')}</LogoWording>
+          <LogoWording>{t('keywords.app_name')}</LogoWording>
         </LogoWrapper>
         <div style={{ display: 'flex' }}>
           <DesktopOnlyItems>
