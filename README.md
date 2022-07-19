@@ -22,10 +22,10 @@ DEMO: [tc-spa-boilerplate.netlify.app](https://tc-spa-boilerplate.netlify.app)
 
 ## Deploy to production
 
-The easiest way is by using [TableCheck's Netlify account](https://app.netlify.com/teams/tablecheck/overview).
+The boilerplate is configured to be deployed to [Netlify](https://netlify.com), but it can also work with Github pages, Vercel, AWS Amplify, etc.
 
 - Click on `New site from Git`
-- Select `Github`, `TableCheck-Labs` and the repository of your project
+- Select `Github` and the repository where you forked it
 - Change Publish directory to `build`
 - Deploy site
 - You can change the URL name on `Site settings > Change site name`
@@ -38,7 +38,7 @@ To upgrade this boilerplate and use the latest configuration and dependencies, p
 
 ## Support
 
-Ask in #dev-frontend channel in Slack
+Create an issue in the Github repository
 
 ## Resources
 
