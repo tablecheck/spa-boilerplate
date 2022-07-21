@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 
 import { AppRoute } from 'enums';
 
-import { FooterWrapper, FooterLink, Copyright } from './styles';
+import { FooterHrefLink, FooterLink, FooterWrapper } from './styles';
 
-export const Footer = (): JSX.Element | null => {
+export function Footer(): JSX.Element | null {
   const [t, { language }] = useTranslation();
 
   return (
@@ -17,13 +17,15 @@ export const Footer = (): JSX.Element | null => {
         <FooterLink to={`/${language}/${AppRoute.ReportIssue}`}>
           {t('attributes.links.report_issue')}
         </FooterLink>
+        <FooterHrefLink href="http://tablekit.tablecheck.com/" target="_blank">
+          TableKit
+        </FooterHrefLink>
       </div>
       <div>
         <Link href={`http://tablecheck.com/${language}/join`} target="_blank">
           {t('attributes.links.powered_by')}
         </Link>
-        <Copyright>&copy; {new Date().getFullYear()}</Copyright>
       </div>
     </FooterWrapper>
   );
-};
+}

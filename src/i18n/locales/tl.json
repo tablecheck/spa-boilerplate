@@ -8,13 +8,13 @@
     "links": {
       "powered_by": "Pinapagana ng TableCheck",
       "report_issue": "Mag-ulat ng isang isyu",
-      "about": "Tungkol sa atin"
+      "about": "Tungkol sa proyekto"
     },
     "titles": {
       "headline": "Hello World!"
     },
     "pages": {
-      "about_us": "Sa <0> tablecheck </0> gusto namin ang pagkonekta sa mga kainan sa mga restawran. Iyon ang dahilan kung bakit nilikha namin ang SPA Boilerplate.",
+      "about_us": "Sa <0> tablecheck </0> gusto namin ang pagkonekta sa mga kainan sa mga restawran. Ang layunin ng app na ito ay upang...",
       "about_us_salute": "Hoy, ikaw!",
       "report_issue": "Kung nakakita ka ng anumang maling nilalaman o anumang bagay na maaaring mapabuti sa site, mangyaring iulat ito gamit ang form sa ibaba. Maraming salamat!"
     }

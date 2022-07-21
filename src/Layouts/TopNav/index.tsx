@@ -5,7 +5,7 @@ import { Button, ButtonAppearance } from '@tablecheck/tablekit-button';
 import { Icon } from '@tablecheck/tablekit-icon';
 import { View } from '@tablecheck/tablekit-language-selector';
 import { LogoSymbol } from '@tablecheck/tablekit-logo';
-import { useState } from 'react';
+import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useHistory, useLocation } from 'react-router-dom';
 import { tciSun } from 'tablecheck-icons/tciSun';
@@ -15,41 +15,36 @@ import { getI18nextInstance } from 'i18n';
 import { Sidenav } from '../Sidenav';
 
 import {
-  TopNavWrapper,
-  TopNavContent,
-  LanguageSelectorWrapper,
-  LogoWrapper,
-  LogoWording,
-  MenuButton,
+  DesktopOnlyItems,
   LangSelectorButton,
-  DesktopOnlyItems
+  LanguageSelectorWrapper,
+  LogoWording,
+  LogoWrapper,
+  MenuButton,
+  TopNavContent,
+  TopNavWrapper
 } from './styles';
 
-export const TopNav = ({
+export function TopNav({
   isDarkMode,
   setDarkMode
 }: {
   isDarkMode: boolean;
   setDarkMode: (value: boolean) => void;
-}): JSX.Element | null => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
+}): JSX.Element | null {
+  const [isMenuOpen, setMenuOpen] = React.useState(false);
   const i18next = getI18nextInstance();
   const history = useHistory();
   const [t, { language }] = useTranslation();
   const location = useLocation();
-
   const currentLocale = ordered.find((locale) => locale.code === language);
 
-  if (!language || !ordered) return null;
+  if (!i18next || !language || !ordered) return null;
 
   const changeLanguage = (locale: string) => {
-    const parts = location.pathname.split('/');
-    let page = '';
-    if (parts.length === 4) {
-      page = `/${locale}/${parts[3]}`;
-    } else if (parts.length === 3) {
-      page = `/${locale}/${parts[2]}`;
-    }
+    let parts = location.pathname.split('/');
+    parts = parts.splice(2);
+    const page = `/${locale}/${parts.join('/')}`;
 
     history.replace(page);
     i18next.changeLanguage(locale);
@@ -103,4 +98,4 @@ export const TopNav = ({
       />
     </TopNavWrapper>
   );
-};
+}

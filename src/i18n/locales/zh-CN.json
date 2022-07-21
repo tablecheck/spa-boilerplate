@@ -8,13 +8,13 @@
     "links": {
       "powered_by": "由TableCheck提供支持",
       "report_issue": "报告问题",
-      "about": "关于我们"
+      "about": "关于"
     },
     "titles": {
       "headline": "你好，世界！"
     },
     "pages": {
-      "about_us": "在 <0>tablecheck</0>，我们喜欢将食客与餐厅联系起来。 这就是我们创建 SPA 样板的原因。",
+      "about_us": "在 <0>tablecheck</0>，我们喜欢将食客与餐厅联系起来。 这个应用程序的目的是...",
       "about_us_salute": "嘿！",
       "report_issue": "如果您在网站上发现任何错误的内容或可以改进的地方，请使用以下表格进行报告。 非常感谢你！"
     }

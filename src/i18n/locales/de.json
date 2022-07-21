@@ -8,13 +8,13 @@
     "links": {
       "powered_by": "Powered by TableCheck",
       "report_issue": "Ein Problem melden",
-      "about": "Über uns"
+      "about": "Impressum"
     },
     "titles": {
       "headline": "Hallo Welt!"
     },
     "pages": {
-      "about_us": "Bei <0>tablecheck</0> lieben wir es, Gäste mit Restaurants zu verbinden. Deshalb haben wir den SPA Boilerplate erstellt.",
+      "about_us": "Bei <0>tablecheck</0> lieben wir es, Gäste mit Restaurants zu verbinden. Der Zweck dieser App ist es, ...",
       "about_us_salute": "Sie da!",
       "report_issue": "Wenn Sie auf der Website falsche Inhalte oder Verbesserungen sehen, melden Sie diese bitte über das unten stehende Formular. Vielen Dank!"
     }

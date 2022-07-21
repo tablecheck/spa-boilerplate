@@ -8,13 +8,13 @@
     "links": {
       "powered_by": "Powered by TableCheck",
       "report_issue": "問題を報告する",
-      "about": "私たちに関しては"
+      "about": "について"
     },
     "titles": {
       "headline": "こんにちは世界"
     },
     "pages": {
-      "about_us": "<0>tablecheck</0>では、食事とレストランをつなぐのが大好きです。 そのため、SPAボイラープレートを作成しました。",
+      "about_us": "<0>tablecheck</0>では、食事とレストランをつなぐのが大好きです。 このアプリの目的は...",
       "about_us_salute": "ちょっと、そこ！",
       "report_issue": "サイトで間違ったコンテンツや改善される可能性のあるものを見つけた場合は、以下のフォームを使用して報告してください。 どうもありがとうございました！"
     }

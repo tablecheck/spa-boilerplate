@@ -8,13 +8,13 @@
     "links": {
       "powered_by": "Được cung cấp bởi TableCheck",
       "report_issue": "Báo cáo một vấn đề",
-      "about": "Về chúng tôi"
+      "about": "Về"
     },
     "titles": {
       "headline": "Dùng bữa ở {{country}} như một người địa phương"
     },
     "pages": {
-      "about_us": "Tại <0> tablecheck </0>, chúng tôi muốn kết nối thực khách với nhà hàng. Đó là lý do tại sao chúng tôi đã tạo ra Bảng điều khiển SPA.",
+      "about_us": "Tại <0> tablecheck </0>, chúng tôi muốn kết nối thực khách với nhà hàng. Mục đích của ứng dụng này là ...",
       "about_us_salute": "Này đó!",
       "report_issue": "Nếu bạn thấy bất kỳ nội dung sai hoặc nội dung nào đó có thể được cải thiện trong trang web, vui lòng báo cáo bằng cách sử dụng biểu mẫu bên dưới. Cảm ơn rât nhiều!"
     }
