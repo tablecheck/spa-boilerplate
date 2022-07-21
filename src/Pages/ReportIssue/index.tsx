@@ -1,7 +1,7 @@
 import { useForm } from '@formspree/react';
 import { Button } from '@tablecheck/tablekit-button';
 import { Input } from '@tablecheck/tablekit-input';
-import { useState } from 'react';
+import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
@@ -10,10 +10,10 @@ import { PageWrapper, PageContent, Headline, PageImage } from 'Layouts';
 
 import { MessageTextarea, FormFooter } from './styles';
 
-export const ReportIssue = (): JSX.Element => {
+export function ReportIssue(): JSX.Element {
   const [t, { language }] = useTranslation();
   const [state, handleSubmit] = useForm(CONFIG.formSpreeId);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = React.useState('');
 
   return (
     <PageWrapper>
@@ -68,4 +68,4 @@ export const ReportIssue = (): JSX.Element => {
       </Helmet>
     </PageWrapper>
   );
-};
+}

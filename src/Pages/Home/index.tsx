@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { HomeWrapper, HomeHeadline } from './styles';
 
-export const Home = (): JSX.Element => {
+export function Home(): JSX.Element {
   const [t, { language }] = useTranslation();
 
   return (
@@ -16,4 +16,4 @@ export const Home = (): JSX.Element => {
       </Helmet>
     </HomeWrapper>
   );
-};
+}

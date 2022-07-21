@@ -55,16 +55,16 @@ export function AppThemeProvider({
     return undefined;
   }, [selectedTheme, setDarkMode]);
 
-  const customButtonDarkTheme = {
-    ...buttonDarkTheme,
-    primary: {
-      ...buttonDarkTheme.primary,
-      main: COLORS.PURPLE.L5,
-      hover: COLORS.PURPLE.L6
-    }
-  };
-
   const theme = React.useMemo<Partial<Theme>>(() => {
+    const customButtonDarkTheme = {
+      ...buttonDarkTheme,
+      primary: {
+        ...buttonDarkTheme.primary,
+        main: COLORS.PURPLE.L5,
+        hover: COLORS.PURPLE.L6
+      }
+    };
+
     const updatedTheme = isDarkMode
       ? {
           ...selectedTheme.dark,

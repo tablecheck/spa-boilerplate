@@ -3,6 +3,7 @@
   "license": "MIT",
   "author": "TableCheck Inc.",
   "version": "0.1.0",
+  "main": "src/client.tsx",
   "scripts": {
     "audit": "tablecheck-scripts auditjs",
     "audit:ci": "tablecheck-scripts auditjs --ci",

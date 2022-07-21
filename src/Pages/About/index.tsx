@@ -4,7 +4,7 @@ import { useTranslation, Trans } from 'react-i18next';
 
 import { PageWrapper, PageContent, Headline, PageImage } from 'Layouts';
 
-export const About = (): JSX.Element => {
+export function About(): JSX.Element {
   const [t, { language }] = useTranslation();
 
   return (
@@ -36,4 +36,4 @@ export const About = (): JSX.Element => {
       </Helmet>
     </PageWrapper>
   );
-};
+}
