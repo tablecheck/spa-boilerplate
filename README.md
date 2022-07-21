@@ -43,3 +43,24 @@ Create an issue in the Github repository
 ## Resources
 
 - [i18n Manager](https://www.electronjs.org/apps/i18n-manager): helpful editor for the translations
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you
+would like to change. Please make sure to update tests as appropriate.
+
+## About Us
+
+SPA Boilerplate is made with ❤️ by [TableCheck](https://www.tablecheck.com/en/join/),
+the leading restaurant reservation and guest management app maker. If **you** are a
+ninja-level 🥷 coder (Javascript / Ruby / Elixir / Python / Go), designer, product manager,
+data scientist, QA, etc. and are ready to join us in Tokyo, Japan or work remotely,
+please get in touch at [careers@tablecheck.com](mailto:careers@tablecheck.com) or [careers.tablecheck.com](https://careers.tablecheck.com).
+
+## License
+
+SPA Boilerplate is licensed under the MIT license.
+
+## Copyright
+
+Copyright (c) 2022 TableCheck Inc.
