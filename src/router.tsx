@@ -1,6 +1,6 @@
 import { ordered as orderedLocales } from '@tablecheck/locales';
 import { useTranslation } from 'react-i18next';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { About } from 'Pages/About';
 import { Home } from 'Pages/Home';
@@ -19,26 +19,23 @@ export function Router({
   setDarkMode: (value: boolean) => void;
 }): JSX.Element {
   const [, { language }] = useTranslation();
-  const localePath = `:locale(${SUPPORTED_LOCALES.join('|')})`;
+  // react router v6 not accepting regex on path yet
+  // https://github.com/remix-run/react-router/issues/8254
+  // const localePath = `:locale(${SUPPORTED_LOCALES.join('|')})`;
 
   return (
-    <Switch>
-      <Route path={`/${localePath}/${AppRoute.About}`}>
-        <PageLayout isDarkMode={isDarkMode} setDarkMode={setDarkMode}>
-          <About />
-        </PageLayout>
+    <Routes>
+      <Route
+        path="/:locale"
+        element={
+          <PageLayout isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
+        }
+      >
+        <Route index element={<Home />} />
+        <Route path={AppRoute.About} element={<About />} />
+        <Route path={AppRoute.ReportIssue} element={<ReportIssue />} />
       </Route>
-      <Route path={`/${localePath}/${AppRoute.ReportIssue}`}>
-        <PageLayout isDarkMode={isDarkMode} setDarkMode={setDarkMode}>
-          <ReportIssue />
-        </PageLayout>
-      </Route>
-      <Route path={`/${localePath}`}>
-        <PageLayout isDarkMode={isDarkMode} setDarkMode={setDarkMode}>
-          <Home />
-        </PageLayout>
-      </Route>
-      <Redirect to={`/${language}`} />
-    </Switch>
+      <Route path="*" element={<Navigate to={`/${language}`} replace />} />
+    </Routes>
   );
 }

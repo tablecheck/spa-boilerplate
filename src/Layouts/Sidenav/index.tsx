@@ -38,9 +38,9 @@ export function Sidenav({
   const [t, { language }] = useTranslation();
 
   const onOutsideClickPanel = React.useCallback(
-    (event) => {
+    (event: MouseEvent) => {
       const button = document.querySelector('#button-left');
-      if (!button?.contains(event.target)) {
+      if (!button?.contains(event.target as Node)) {
         setOpen(false);
       }
     },

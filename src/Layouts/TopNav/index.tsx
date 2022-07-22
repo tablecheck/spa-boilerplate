@@ -7,7 +7,7 @@ import { View } from '@tablecheck/tablekit-language-selector';
 import { LogoSymbol } from '@tablecheck/tablekit-logo';
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { tciSun } from 'tablecheck-icons/tciSun';
 
 import { getI18nextInstance } from 'i18n';
@@ -34,7 +34,7 @@ export function TopNav({
 }): JSX.Element | null {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
   const i18next = getI18nextInstance();
-  const history = useHistory();
+  const navigate = useNavigate();
   const [t, { language }] = useTranslation();
   const location = useLocation();
   const currentLocale = ordered.find((locale) => locale.code === language);
@@ -46,7 +46,7 @@ export function TopNav({
     parts = parts.splice(2);
     const page = `/${locale}/${parts.join('/')}`;
 
-    history.replace(page);
+    navigate(page, { replace: true });
     i18next.changeLanguage(locale);
   };
 

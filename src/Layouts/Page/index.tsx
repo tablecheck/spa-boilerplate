@@ -1,19 +1,19 @@
+import { Outlet } from 'react-router-dom';
+
 import { Footer } from '../Footer';
 import { TopNav } from '../TopNav';
 
 export function PageLayout({
   isDarkMode,
-  setDarkMode,
-  children
+  setDarkMode
 }: {
   isDarkMode: boolean;
   setDarkMode: (value: boolean) => void;
-  children: JSX.Element;
 }): JSX.Element {
   return (
     <>
       <TopNav isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
-      {children}
+      <Outlet />
       <Footer />
     </>
   );
