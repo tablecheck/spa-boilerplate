@@ -31,6 +31,12 @@ Vercel, AWS Amplify, etc.
 - Deploy site
 - You can change the URL name on `Site settings > Change site name`
 
+## Caveats
+
+- At some point, if the project becomes a real product, all the files in `/public/static/img` and `/public/static/fonts`
+  should be removed and loaded from a CDN
+- The CDN URL should be specified in `/config/default.json`
+
 ## Upgrade
 
 To upgrade this boilerplate and use the latest configuration and dependencies, please run this command and select SPA
@@ -57,7 +63,8 @@ SPA Boilerplate is made with ❤️ by [TableCheck](https://www.tablecheck.com/e
 the leading restaurant reservation and guest management app maker. If **you** are a
 ninja-level 🥷 coder (Javascript / Ruby / Elixir / Python / Go), designer, product manager,
 data scientist, QA, etc. and are ready to join us in Tokyo, Japan or work remotely,
-please get in touch at [careers@tablecheck.com](mailto:careers@tablecheck.com) or [careers.tablecheck.com](https://careers.tablecheck.com).
+please get in touch at [careers@tablecheck.com](mailto:careers@tablecheck.com)
+or [careers.tablecheck.com](https://careers.tablecheck.com).
 
 ## License
 
@@ -66,3 +73,5 @@ SPA Boilerplate is licensed under the MIT license.
 ## Copyright
 
 Copyright (c) 2022 TableCheck Inc.
+
+Text Fonts from [IBM](https://github.com/IBM/plex/releases/)
