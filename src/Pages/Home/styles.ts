@@ -5,7 +5,7 @@ import { pageTransitionEasing, slideUp } from 'styles';
 
 export const HomeWrapper = styled(PageWrapper)`
   max-width: initial;
-  animation: ${slideUp} ${pageTransitionEasing} 0.5s;
+  animation: ${slideUp} ${pageTransitionEasing} 0.4s;
 `;
 
 export const HomeHeadline = styled(Headline)`
