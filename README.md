@@ -16,7 +16,7 @@ DEMO: [tc-spa-boilerplate.netlify.app](https://tc-spa-boilerplate.netlify.app)
 
 - Install [Node.js](https://nodejs.org/en/download/) and [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
 - Fork/Clone this project
-- Run `nvm use` (will use the correct Node.js version)
+- Run `nvm use` or `nvm use <version>` (on machines running Windows)
 - Run `npm i --legacy-peer-deps` (will install the dependencies)
 - Run `npm start` (will start the app in http://localhost:3000/)
 
