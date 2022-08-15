@@ -1,11 +1,11 @@
-import { LocaleCode } from '@tablecheck/locales';
+import { LocaleCode, ordered as orderedLocales } from '@tablecheck/locales';
 import i18next from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
-
-import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from 'utils/constants';
-
 import en from './locales/en.json';
+
+const SUPPORTED_LOCALES = orderedLocales.map(({ code }) => code);
+const DEFAULT_LOCALE = LocaleCode.English;
 
 i18next
   .use(initReactI18next)
