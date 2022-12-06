@@ -5,13 +5,28 @@ import {
   TypographyHeadlineDesktop
 } from '@tablecheck/tablekit-typography';
 import { Link } from 'react-router-dom';
-
-import { fadeIn, pageTransitionEasing } from 'styles';
+import { keyframes } from '@emotion/react';
 
 export const GRID_MARGIN = Spacing.L4;
 export const GRID_DESKTOP_MAX_WIDTH = '74em';
 
 export const TOPNAV_HEIGHT = '72px';
+export const pageTransitionEasing = 'cubic-bezier(0.23, 1, 0.32, 1)'; // easeOutQuint
+export const commonTransition = `all ${pageTransitionEasing} 0.5s`;
+
+export const slideUp = keyframes`
+  from { transform: translate3d(0, 100vh, 0); }
+  to { translate3d(0, 0, 0); }
+`;
+
+export const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 /* Breakpoints */
 // mobile: 20rem (320px) - 47.938rem (767px)
