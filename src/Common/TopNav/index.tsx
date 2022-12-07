@@ -12,7 +12,7 @@ import { tciSun } from 'tablecheck-icons/tciSun';
 
 import { getI18nextInstance } from 'i18n';
 
-import { Sidenav } from '../Sidenav';
+import { Sidenav } from 'Common/Sidenav';
 
 import {
   DesktopOnlyItems,
@@ -24,6 +24,7 @@ import {
   TopNavContent,
   TopNavWrapper
 } from './styles';
+import { MobileOnlyItems } from 'Common/Sidenav/styles';
 
 export function TopNav({
   isDarkMode,
@@ -82,11 +83,13 @@ export function TopNav({
               )}
             />
           </DesktopOnlyItems>
-          <MenuButton
-            onClick={() => setMenuOpen(!isMenuOpen)}
-            appearance={ButtonAppearance.Subtle}
-            iconBefore={<Icon icon={faBars} />}
-          />
+          <MobileOnlyItems>
+            <MenuButton
+              onClick={() => setMenuOpen(!isMenuOpen)}
+              appearance={ButtonAppearance.Subtle}
+              iconBefore={<Icon icon={faBars} />}
+            />
+          </MobileOnlyItems>
         </div>
       </TopNavContent>
       <Sidenav

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { Headline, PageWrapper } from 'Layouts';
+import { Headline, PageWrapper } from 'styles';
 import { pageTransitionEasing, slideUp } from 'styles';
 
 export const HomeWrapper = styled(PageWrapper)`

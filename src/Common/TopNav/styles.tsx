@@ -4,7 +4,7 @@ import { LanguageSelector as TKLanguageSelector } from '@tablecheck/tablekit-lan
 import { Spacing } from '@tablecheck/tablekit-theme';
 import { Link } from 'react-router-dom';
 
-import { BREAKPOINTS, GRID_MARGIN, TOPNAV_HEIGHT } from 'Layouts';
+import { BREAKPOINTS, GRID_MARGIN, TOPNAV_HEIGHT } from 'styles';
 
 export const TopNavWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};

@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
-import { Footer } from '../Footer';
-import { TopNav } from '../TopNav';
+import { TopNav } from 'Common/TopNav';
 
 export function PageLayout({
   isDarkMode,
@@ -14,7 +13,6 @@ export function PageLayout({
     <>
       <TopNav isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
       <Outlet />
-      <Footer />
     </>
   );
 }

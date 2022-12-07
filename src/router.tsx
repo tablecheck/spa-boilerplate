@@ -2,12 +2,9 @@ import { ordered as orderedLocales } from '@tablecheck/locales';
 import { useTranslation } from 'react-i18next';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-import { About } from 'Pages/About';
 import { Home } from 'Pages/Home';
-import { ReportIssue } from 'Pages/ReportIssue';
-import { AppRoute } from 'enums';
 
-import { PageLayout } from './Layouts/Page';
+import { PageLayout } from 'Common/Page';
 
 export const SUPPORTED_LOCALES = orderedLocales.map(({ code }) => code);
 
@@ -32,8 +29,6 @@ export function Router({
         }
       >
         <Route index element={<Home />} />
-        <Route path={AppRoute.About} element={<About />} />
-        <Route path={AppRoute.ReportIssue} element={<ReportIssue />} />
       </Route>
       <Route path="*" element={<Navigate to={`/${language}`} replace />} />
     </Routes>
