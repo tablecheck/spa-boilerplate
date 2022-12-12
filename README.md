@@ -2,23 +2,14 @@
 
 DEMO: [tc-spa-boilerplate.netlify.app](https://tc-spa-boilerplate.netlify.app)
 
-## Features
-
-- Main tech stack: React, TypeScript, Emotion, i18n
-- Tablekit integration with FontAwesome icons and Dark Mode
-- Basic localized routing
-- Basic layout with footer, top and side navs
-- Language Selection
-- Responsive
-- Basic FormSpree contact form
-
 ## Getting started
 
 - Install [Node.js](https://nodejs.org/en/download/) and [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
-- Fork/Clone this project
+- Clone or this project and ensure all the boilerplate code is committed onto `main`
 - Run `nvm use` or `nvm use <version>` (on machines running Windows)
 - Run `npm i --legacy-peer-deps` (will install the dependencies)
 - Run `npm start` (will start the app in http://localhost:3000/)
+- Commit all your work onto `development` and deploy that branch
 
 ## Deploy to production
 
@@ -50,10 +41,6 @@ when asked:
 ## Support
 
 Create an issue in the Github repository
-
-## Resources
-
-- [i18n Manager](https://www.electronjs.org/apps/i18n-manager): helpful editor for the translations
 
 ## Contributing
 
